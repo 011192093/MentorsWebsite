@@ -1,0 +1,56 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set to two columns per row */
+    gap: 2px;
+  }
+  
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .video {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Adjust the height of the transparent cover as needed */
+    background: rgba(0, 0, 0, 0.6); /* Adjust the transparency as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  
+  .overlay-text {
+    color: white; /* Text color */
+    font-size: 20px; /* Font size */
+    
+    /* Add additional styles as needed */
+  }
+  
+  .video-container.selected .video {
+    transform: scale(1.1);
+  }
+  .photo {
+    max-width: 115%;
+    height: auto;
+    object-fit: cover; /* or 'contain' based on your preference */
+  }
+
+  @media screen  and (max-width: 700px) {
+    .video-grid  {
+        grid-template-columns: 1fr ; /* Adjusted for medium-sized screens */
+        text-align: center;
+    }
+    
+  }
+  
+ 

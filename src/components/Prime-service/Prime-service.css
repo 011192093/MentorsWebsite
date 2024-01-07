@@ -1,0 +1,56 @@
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5%;
+    gap:6%;
+  }
+  .a-title{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .person {
+    
+    
+    margin: 10px;
+  }
+  .a-title {
+    text-align: center;
+    margin: 3%;
+  }
+  
+ 
+  .person p {
+    
+    color: white;
+    text-align: justify;
+    font-size:large;
+    color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+  }
+
+  .person h6 {
+    margin: 2%;
+    text-align: center;
+    font-size: large;
+   font-weight: bold;
+   color: brown;
+  }
+  
+  .person img {
+    width: 100%;
+    border-radius: 160px;
+    border: 2px solid grey;
+  }
+
+
+  @media screen  and (max-width: 880px) {
+    .article {
+        grid-template-columns: 1fr 1fr; /* Adjusted for medium-sized screens */
+        gap:3%;
+        
+    }
+  
+  }
+  
+ 

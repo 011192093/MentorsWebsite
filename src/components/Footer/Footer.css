@@ -1,0 +1,100 @@
+.mfooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-auto-rows: auto;
+  flex-direction: column;
+  background-color: rgb(31, 30, 30);
+  color: whitesmoke;
+  padding: 3.5%;
+  gap: 1.5%;
+  grid-auto-flow: dense; /* Allow auto-placement to fill in empty cells */
+}
+
+.mfooter h6{
+    font-size: large;
+    color: rgb(131, 29, 29);
+}
+
+.felement p {
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .felement p:hover, .locations:hover {
+    color: #ff9800;
+  }
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.message label,
+.message textarea,
+.message input {
+  display: block;
+  margin-bottom: 10px;
+  width: 90%;
+  
+}
+
+.message textarea {
+  resize: vertical;
+}
+
+.message button {
+  background-color:  rgb(131, 29, 29);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 40px;
+  width: 90%;
+}
+
+.message button:hover {
+  background-color: #333;
+}
+.locations{
+    background-color: rgb(31, 30, 30);;
+    color: white;
+}
+.icn{
+  width: 12%;
+  min-width: 45px; /* Set a minimum width for the images */
+  border-radius: 50px;
+  border: 2px solid rgb(131, 29, 29);
+  flex-shrink: 0; /* Prevent shrinking */
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin: 2%;
+}
+.icn:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.pre-icon{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(131, 29, 29);
+    color: aliceblue;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1030px) {
+  .mfooter {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* Adjusted for medium-sized screens */
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .mfooter {
+    grid-template-columns: 1fr 1fr 1fr; /* Adjusted for medium-sized screens */
+}
+}
+
+

@@ -1,0 +1,128 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+  }
+ .contact-container h2{
+    text-align: center;
+    margin: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+ }
+  .office-section {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 3%;
+   background-color: #af1f1f;
+
+  }
+  .office-section1{
+    display: grid;
+   grid-template-columns: 1fr 1fr ;
+   background-color: #722424;
+   margin: 3%;
+  }
+  .card,
+  .card1 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    margin: 9%;
+    border: 1px solid #ddd;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: #ffffff; /* Card background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card:hover,
+  .card1:hover {
+    box-shadow: 0 8px 16px rgba(134, 25, 25, 0.2);
+  }
+
+ 
+  
+  .card h3,
+  .card1 h3 {
+    margin: 0;
+    color:white; /* Heading color */
+    background-color: #721f1f;
+    padding: 1%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  
+  .card p,
+  .card1 p {
+    margin: 10px 0;
+    color: #666; /* Text color */
+    
+  }
+  
+  .custom-marker {
+    color: #d3660c; /* Customize the color as needed */
+    padding-right: 4%;
+  }
+
+  .highlighted-label {
+    
+    font-weight: bold;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Adjust as needed */
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust as needed */
+    flex-wrap: wrap;
+  }
+  
+  .card-button {
+    padding: 2% 3%;
+    background-color: #741717; /* Example background color, customize as needed */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 1%;
+   border-radius: 10px;
+  }
+  .card-button:hover {
+    
+    background-color: black; /* Example background color, customize as needed */
+    
+  }
+
+
+
+  @media screen and (min-width: 769px) and (max-width: 1030px) {
+    .office-section,
+    .office-section1 {
+        grid-template-columns: 1fr 1fr; /* Adjusted for medium-sized screens */
+    }
+
+    .card,
+    .card1 {
+        margin: 5%; /* Adjusted margin for medium-sized screens */
+    }
+}
+
+/* For screens up to 768px (as per your existing media query) */
+@media screen and (max-width: 768px) {
+    .office-section,
+    .office-section1 {
+        grid-template-columns: 1fr ; /* Adjusted for smaller screens */
+    }
+
+    .card,
+    .card1 {
+        margin: 5%; /* Adjusted margin for smaller screens */
+    }
+}
+  

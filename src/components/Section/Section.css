@@ -1,0 +1,45 @@
+.about1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4%;
+    gap:3%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    object-fit: contain;
+    max-width: 100%; /* Limit the width to the viewport width */
+    margin: 0 auto; /* Center the grid within the container */
+}
+ .paragraph{
+    object-fit: contain;
+    max-width: 100%; /* Limit the width to the viewport width */
+    margin: 0 auto; 
+ }   
+
+.paragraph h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.a-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3%;
+    gap:2%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+
+
+}
+
+
+
+  @media screen  and (max-width: 1030px) {
+    .about1,.a-left {
+        grid-template-columns: 1fr ; /* Adjusted for medium-sized screens */
+        padding: 3%;
+        margin: 3%;
+    }
+    
+  
+  }
+  
+ 

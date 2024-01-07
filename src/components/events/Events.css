@@ -1,0 +1,120 @@
+.events-container {
+    position: relative;
+    margin: 3%;
+  }
+  .events-container h1 {
+   
+    margin: 3%;
+  }
+  .events-slider {
+    display: flex;
+    overflow-x: scroll;
+    gap: 30px; /* Adjust the gap between cards */
+    width: calc(300px + 40px) * 3; /* Width of one card plus gap, multiplied by the number of cards */
+  }
+  
+  .event-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 450px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    object-fit: contain;
+    
+  }
+  
+  
+  .event-card.visible {
+    transform: translateX(0);
+  }
+  
+  .event-image img {
+    width: 100%;
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
+    max-height: 250px; /* Adjust the max height as needed */
+  }
+  
+  .event-details {
+    padding: 15px;
+  }
+  
+  .event-details h3 {
+    margin-top: 0;
+  }
+  
+  .event-date {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    margin-bottom: 15px;
+  }
+  
+  .read-more-btn {
+    background-color: rgb(131, 29, 29);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .read-more-btn:hover {
+    background-color: black;
+  }
+  
+  .time-span-indicator {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .show-more-btn-container {
+    text-align: center;
+    margin: 6%;
+  }
+  
+  .show-more-btn {
+    background-color: rgb(131, 29, 29);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .show-more-btn:hover {
+    background-color: black;
+  }
+  .slick-prev, .slick-next {
+    font-size: 24px; /* Adjust the font size as needed */
+    color:#752014;/* Change the color of the arrows */
+    background-color: #aa3d3d; /* Background color of the arrows */
+    border: 1px solid rgb(54, 33, 29); /* Border color of the arrows */
+    border-radius: 50%; /* Make the arrows circular */
+    width: 40px; /* Adjust the width of the arrows */
+    height: 40px; /* Adjust the height of the arrows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .slick-prev:hover, .slick-next:hover {
+    color: #752014; /* Change the color on hover */
+    background-color: #000000; /* Change the background color on hover */
+    border-color: rgb(54, 33, 29); /* Change the border color on hover */
+  }
+  
+  /* Optional: If you want to remove the default styles applied by react-slick */
+  .slick-prev:before, .slick-next:before {
+    content: ""; /* Remove the default arrow content */
+  }

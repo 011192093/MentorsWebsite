@@ -1,0 +1,70 @@
+.icn-media {
+    width: 100%;
+    height: 230px; /* Maintain aspect ratio */
+    display: block;
+    object-fit:cover;
+    object-position: 20% 50% ; /* Adjust the second value to cut from the top */
+    
+    
+  }
+  .media{
+    text-align: center;
+    margin: 3%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .icn-media1{
+    width: 35%;
+  }
+  .left{
+
+    display: flex;
+    flex-direction: row;
+    align-items: left ;
+    gap:5%;
+    margin: 5%;
+  }
+  .right{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap:5%;
+    margin: 5%;
+    background-color: blanchedalmond;
+    padding: 3%;
+  }
+  .bold{
+    font-size: large;
+    font-weight: bold;
+  }
+  .read-red-more{
+
+    background-color:rgb(134, 24, 24);
+    color: white;
+    font-size: large;
+    border-radius: 20px;
+    padding: 1% 2%;
+  }
+  .read-red-more:hover{
+
+    background-color:black;
+    
+  }
+
+  @media screen and (max-width: 1030px) {
+    .left,.right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .read-red-more{
+
+     margin: 3%;
+    }
+    .icn-media1{
+      width: 95%;
+      margin: 3%;
+    }
+  
+  }
